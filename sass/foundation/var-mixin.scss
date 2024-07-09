@@ -1,0 +1,35 @@
+// var
+$white: #fff;
+$black: #000000;
+$gray-dark: #d7d9d8;
+
+
+// mixin
+$pc-wide: 1300px;
+$tab: 1000px;
+$sp: 650px;
+$sp-min: 366px;
+
+@mixin sp {
+    @media screen and (min-width: ($sp-min)) {
+      @content;
+    }
+  }
+
+@mixin tab {
+    @media screen and (min-width: ($sp)) {
+      @content;
+    }
+  }
+
+@mixin pc {
+    @media screen and (min-width: ($tab)) {
+      @content;
+    }
+  }
+
+@mixin pc-wide {
+    @media screen and (min-width: ($pc-wide)) {
+      @content;
+    }
+  }

@@ -1,0 +1,15 @@
+@use "./foundation/var-mixin.scss" as var-mixin;
+
+.c-separator {
+
+    @include var-mixin.pc {
+        &::before {
+            content: "";
+            display: block;
+            width: 48px;
+            height: 2px;
+            background: #e7e7e7;
+            margin: 35px 0;
+        }
+    }
+}

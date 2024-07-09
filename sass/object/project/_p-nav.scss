@@ -1,0 +1,74 @@
+@use "./foundation/var-mixin.scss" as var-mixin;
+
+.p-nav {
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    margin-top: 50px;
+
+    &.active {
+        display: block;
+    }
+
+    @include var-mixin.pc {
+        display: block;
+        position: static;
+        text-align: start;
+
+    }
+
+}
+
+.p-nav__menu {
+    display: inline-block;
+    text-align: left;
+
+    li {
+        margin-bottom: 10px;
+
+        a {
+            color: var-mixin.$black;
+
+        }
+    }
+}
+
+// <?php wp_nav_menu();?>で出力されるクラス
+
+.menu-item {
+
+    a {
+        opacity: 1;
+
+        @include var-mixin.pc {
+            opacity: 0.5;
+            
+        }
+    }
+}
+
+.current-menu-item {
+    position: relative;
+
+    @include var-mixin.pc {
+        font-weight: 700;
+        opacity: 1;
+
+        a {
+            opacity: 1;
+        }
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: -25%;
+            transform: translateY(-50%);
+            font: var(--fa-font-solid);
+            content: '\f061';
+            font-size: 0.75rem;
+        }
+    }
+}

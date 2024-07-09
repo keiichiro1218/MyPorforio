@@ -1,0 +1,10 @@
+@use "./foundation/var-mixin.scss" as var-mixin;
+
+.l-sidebar {
+    display: none;
+
+    @include var-mixin.pc {
+        display: block;
+
+    }
+}

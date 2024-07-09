@@ -1,0 +1,9 @@
+@use "./foundation/var-mixin.scss" as var-mixin;
+
+.l-main {
+
+    @include var-mixin.pc {
+        display: flex;
+
+    }
+}

@@ -1,0 +1,33 @@
+@use "./foundation/var-mixin.scss" as var-mixin;
+
+.p-content {
+    padding: 50px 10%;
+
+    @include var-mixin.pc {
+        max-width: 1200px;
+
+    }
+}
+
+.p-content_main {
+
+    @include var-mixin.pc {
+        display: flex;
+
+    }
+}
+
+.p-content_single {
+    margin: 0 auto;
+
+}
+
+.p-content_contact {
+    text-align: center;
+
+    @include var-mixin.pc {
+        display: block;
+
+    }
+}
+

@@ -1,0 +1,6 @@
+@use "./foundation/var-mixin.scss" as var-mixin;
+
+.c-logo {
+    font-size: 2rem;
+    color: var-mixin.$black;
+}

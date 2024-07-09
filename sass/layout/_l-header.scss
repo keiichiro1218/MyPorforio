@@ -1,0 +1,12 @@
+@use "./foundation/var-mixin.scss" as var-mixin;
+
+.l-header {
+    width: 100%;
+
+    @include var-mixin.pc {
+        height: 100vh;
+        width: 280px;
+
+    }
+
+}

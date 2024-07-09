@@ -1,0 +1,65 @@
+@use "./foundation/var-mixin.scss" as var-mixin;
+
+.p-post {
+    position: relative;
+    display: block;
+    width: 100%;
+
+    @include var-mixin.pc {
+        width: 33%;
+
+        &:not(:nth-child(3n+1)) {
+            margin-left: 3%;
+    
+        }
+    }
+}
+
+.p-post__img {
+    width: 100%;
+    margin-bottom: 3%;
+
+    img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 7/5;
+        height: 100%;
+        box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 20%)
+    }
+}
+
+.p-post__content {
+    position: relative;
+    
+}
+
+.p-post__category {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0; 
+
+}
+
+.p-post__category_list {
+    font-weight: 700;
+    background: var-mixin.$gray-dark;
+    font-size: 0.8em;
+    padding: 2px 4px;
+    
+    &:nth-child( n + 2) {
+        margin-left: 3%;
+
+    }
+}
+
+.p-post__infomation {
+    aspect-ratio: 7/2;
+    overflow-wrap: break-word;
+}
+
+.p-post__title {
+  margin-bottom: 1%;
+
+}

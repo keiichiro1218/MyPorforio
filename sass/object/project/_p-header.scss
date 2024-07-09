@@ -1,0 +1,28 @@
+@use "./foundation/var-mixin.scss" as var-mixin;
+
+.p-header {
+    position: relative;
+    padding: 0 5%;
+    background-color: #ffff;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 0;
+
+    @include var-mixin.pc {
+        display: block;
+        height: 100%;
+        box-shadow: 2px 0px rgba(0, 0, 0, 0.16);
+        padding: 50px 10%;
+
+    }
+
+}
+
+.p-header__logo {
+    text-align: start;
+
+    @include var-mixin.pc {
+        display: block;
+
+    }
+}

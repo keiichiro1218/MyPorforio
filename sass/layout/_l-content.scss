@@ -1,0 +1,18 @@
+@use "./foundation/var-mixin.scss" as var-mixin;
+
+.l-content {
+    width: 100%;
+
+    @include var-mixin.pc {
+        width: calc(100% - 280px);
+
+    }
+}
+
+.l-content.active {
+    display: none;
+}
+
+.l-content_single {
+    background-color: #f0f0f0;
+}

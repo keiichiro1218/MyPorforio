@@ -1,0 +1,38 @@
+@use "./foundation/var-mixin.scss" as var-mixin;
+
+.p-fields__table {
+    display: inline-block;
+    width: 100%;
+    margin-top: 30px;
+
+    @include var-mixin.pc {
+        display: flex;
+
+    }
+}
+
+.p-fields__body {
+    width: 100%;
+}
+
+.p-fields__tr {
+    &:nth-child(odd) {
+        background-color: var-mixin.$gray-dark;
+    }
+
+    &:nth-child(even) {
+        background-color: var-mixin.$white;
+    }
+}
+
+.p-fields__th {
+    padding: 10px;
+}
+
+.p-fields__td {
+    padding: 10px;
+}
+
+.p-fields__content {
+    margin-top: 30px;
+}

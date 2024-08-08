@@ -1,5 +1,11 @@
 <?php get_header('single'); ?>
 
+<div class="p-content__title">
+    <h2 class="c-logo">
+        <?php the_title(); ?>
+    </h2>
+</div>
+<!-- /.p-content__title -->
 <?php the_content() ?>
 
 <div class="p-fields">
@@ -34,7 +40,7 @@
                 </th>
                 <!-- /.p-fields__th -->
                 <td class="p-fields__td">
-                    <?php get_field('position'); ?>
+                    <?php the_field('position'); ?>
                </td>
                <!-- /.p-fields__td -->
             </tr>

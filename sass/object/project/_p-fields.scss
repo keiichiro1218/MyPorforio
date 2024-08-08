@@ -1,9 +1,7 @@
 @use "./foundation/var-mixin.scss" as var-mixin;
 
-.p-fields__table {
-    display: inline-block;
-    width: 100%;
-    margin-top: 30px;
+.p-fields {
+    display: block;
 
     @include var-mixin.pc {
         display: flex;
@@ -11,9 +9,21 @@
     }
 }
 
+.p-fields__table {
+    display: inline-block;
+    width: 100%;
+    margin-top: 30px;
+
+    @include var-mixin.pc {
+        display: flex;
+        width: 47%;
+
+    }
+}
+
 .p-fields__body {
     width: 100%;
-    
+
 }
 
 .p-fields__tr {
@@ -38,5 +48,10 @@
 
 .p-fields__content {
     margin-top: 30px;
+
+    @include var-mixin.pc {
+        width: 47%;
+        margin-left: 6%;
+    }
 
 }

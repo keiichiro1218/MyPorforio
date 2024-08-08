@@ -1,8 +1,11 @@
 <div class="p-form">
-    <h2 class="p-form__title">
-        Contact
-    </h2>
-    <p class="p-form__content">お仕事のご連絡、ご相談はこちらからお願いいたします。</p>
+    <div class="p-form__title">
+        <h2 class="p-form__logo">
+            Contact
+        </h2>
+        <p class="p-form__content">お仕事のご連絡、ご相談はこちらからお願いいたします。</p>
+    </div>
+    <!-- /.p-form__title -->
     <form action="" class="p-form__body">
         <table class="p-table">
             <tr class="p-table__tr">

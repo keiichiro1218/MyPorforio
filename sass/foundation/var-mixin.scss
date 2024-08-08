@@ -2,13 +2,14 @@
 $white: #fff;
 $black: #000000;
 $gray-dark: #d7d9d8;
+$gray-light: #e7e7e7;
 
 
 // mixin
 $pc-wide: 1300px;
 $tab: 1000px;
 $sp: 650px;
-$sp-min: 366px;
+$sp-min: 376px;
 
 @mixin sp {
     @media screen and (min-width: ($sp-min)) {

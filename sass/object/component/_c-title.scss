@@ -1,0 +1,24 @@
+@use "./foundation/var-mixin.scss" as var-mixin;
+
+.c-title {
+    
+
+}
+
+.c-title_content {
+    font-size: 3rem;
+
+
+}
+
+.c-title_profile {
+    font-size: 1.5rem;
+    border-bottom: solid 2px black;
+
+}
+
+.c-title_skill {
+    font-size: 1.2rem;
+    font-weight: 700;
+
+}

@@ -1,0 +1,19 @@
+@use "./foundation/var-mixin.scss" as var-mixin;
+
+.p-profile {
+    margin-bottom: 60px;
+    
+}
+
+.p-profile__title {
+    margin-bottom: 30px;
+
+}
+
+.p-profile__text {
+    
+    p {
+        margin-bottom: 8px;
+    }
+
+}

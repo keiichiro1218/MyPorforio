@@ -11,8 +11,9 @@
 
 .p-content_main {
 
-    @include var-mixin.pc {
+    @include var-mixin.sp {
         display: flex;
+        flex-wrap: wrap;
 
     }
 }
@@ -24,10 +25,16 @@
 
 .p-content_contact {
     text-align: center;
+    margin: 0 auto;
 
     @include var-mixin.pc {
         display: block;
 
     }
+}
+
+.p-content__title {
+    margin-bottom: 50px;
+
 }
 

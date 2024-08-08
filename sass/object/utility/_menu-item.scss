@@ -1,0 +1,38 @@
+@use "./foundation/var-mixin.scss" as var-mixin;
+
+// <?php wp_nav_menu();?>で出力されるクラス
+
+.menu-item {
+
+    a {
+        opacity: 1;
+
+        @include var-mixin.pc {
+            opacity: 0.5;
+            
+        }
+    }
+}
+
+.current-menu-item {
+    position: relative;
+
+    @include var-mixin.pc {
+        font-weight: 700;
+        opacity: 1;
+
+        a {
+            opacity: 1;
+        }
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: -13%;
+            transform: translateY(-50%);
+            font: var(--fa-font-solid);
+            content: '\f061';
+            font-size: 0.75rem;
+        }
+    }
+}

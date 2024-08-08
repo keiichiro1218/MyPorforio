@@ -4,15 +4,32 @@
     position: relative;
     display: block;
     width: 100%;
+    transition-duration: 0.5s;
+    margin-bottom: 12px;
+
+    @include var-mixin.sp {
+        width: 47%;
+
+        &:not(:nth-child( odd )) {
+            margin-left: 5%;
+    
+        }
+    }
 
     @include var-mixin.pc {
-        width: 33%;
+        width: 30%;
 
         &:not(:nth-child(3n+1)) {
             margin-left: 3%;
     
         }
     }
+}
+
+.p-post_hover {
+    position: relative;
+    transform: translateY(-10px);
+
 }
 
 .p-post__img {
@@ -25,13 +42,34 @@
         object-fit: cover;
         aspect-ratio: 7/5;
         height: 100%;
-        box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 20%)
+        box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 20%);
+
     }
 }
 
 .p-post__content {
     position: relative;
     
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: var-mixin.$black;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+        opacity: 0;
+        transition-duration: 0.5s;
+    }
+}
+
+.p-post_hover-img {
+
+    &::before {
+        opacity: 0.3;
+
+    }
 }
 
 .p-post__category {

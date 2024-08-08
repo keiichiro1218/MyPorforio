@@ -45,10 +45,6 @@
         </header>
         <!-- /.l-header -->
         <main class="l-content">
-            <?php if ( is_front_page()):?>
-                    <div class="p-content p-content_main">
-                <?php else: ?>
-                    <div class="p-content p-content_contact">
-            <?php endif; ?>
+            <div class="p-content p-content_contact">
             
          

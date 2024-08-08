@@ -3,4 +3,13 @@
 .c-logo {
     font-size: 2rem;
     color: var-mixin.$black;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+
+    @include var-mixin.pc {
+        font-size: 3rem;
+        
+    }
 }
+  

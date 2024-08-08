@@ -8,7 +8,7 @@
             display: block;
             width: 48px;
             height: 2px;
-            background: #e7e7e7;
+            background: var-mixin.$gray-light;
             margin: 35px 0;
         }
     }

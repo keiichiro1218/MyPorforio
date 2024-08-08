@@ -1,0 +1,59 @@
+@use "./foundation/var-mixin.scss" as var-mixin;
+
+.p-table {
+    width: 100%;
+    margin-bottom: 30px;
+    
+}
+
+.p-table__tr {
+    display: block;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+
+    }
+
+    @include var-mixin.pc {
+        display: flex;
+        align-items: center;
+
+    }
+}
+
+.p-table__th {
+    display: block;
+    text-align: left;
+    padding: 12px 12px 12px 0;
+
+    @include var-mixin.pc {
+        width: 30%;
+
+    }
+
+}
+
+.p-table__td {
+    display: block;
+    text-align: left;
+    padding: 6px;
+
+    @include var-mixin.pc {
+        width: 70%;
+
+    }
+}
+
+.p-table__input {
+    background-color: var-mixin.$gray-dark;
+    border:  solid 1px var-mixin.$black;
+    border-radius: 6px;
+    width: 100%;
+    padding: 6px;
+
+}
+
+.p-table__textarea {
+    height: 180px;
+
+}

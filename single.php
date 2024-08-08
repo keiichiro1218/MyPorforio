@@ -35,7 +35,6 @@
                 <!-- /.p-fields__th -->
                 <td class="p-fields__td">
                     <?php get_field('position'); ?>
-                    
                </td>
                <!-- /.p-fields__td -->
             </tr>

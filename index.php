@@ -8,7 +8,7 @@
                         <?php if(has_post_thumbnail()): ?>
                             <?php the_post_thumbnail(array( 100, 75 )); ?>
                             <?php else : ?>
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/noimg.png" alt="">
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/noimg.png" alt="">
                         <?php endif; ?>
                     </figure>
                 </div>

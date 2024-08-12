@@ -2,6 +2,7 @@
 
 .p-content {
     padding: 50px 10%;
+    margin: 0 auto;
 
     @include var-mixin.pc {
         max-width: 1200px;

@@ -36,20 +36,6 @@
     }
 }
 
-// <?php wp_nav_menu();?>で出力されるクラス
-
-.menu-item {
-
-    a {
-        opacity: 1;
-
-        @include var-mixin.pc {
-            opacity: 0.5;
-            
-        }
-    }
-}
-
 .current-menu-item {
     position: relative;
 

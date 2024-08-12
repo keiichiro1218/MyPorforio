@@ -12,8 +12,10 @@
 
 .l-content.active {
     display: none;
+    
 }
 
 .l-content_single {
-    background-color: #f0f0f0;
+    background-color: var-mixin.$gray;
+
 }

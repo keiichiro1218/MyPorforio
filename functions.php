@@ -5,6 +5,8 @@ function my_enqueue_scripts() {
     wp_enqueue_script('jquery');
     wp_enqueue_script('js', $uri . '/js/script.js', array(), gmdate( 'Ymd/Hi', filemtime( get_theme_file_path( '/js/script.js' ) ) ) );
     wp_enqueue_style('my_styles', $uri . '/css/style.css', [] ,gmdate( 'Ymd/Hi', filemtime( get_theme_file_path( '/css/style.css' ) ) ) );
+    wp_enqueue_style("fontawesome", "https://use.fontawesome.com/releases/v6.5.0/css/all.css");
+    wp_enqueue_style("googlefonts", "https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap");
 
 }
 
@@ -16,7 +18,6 @@ add_action('init', function() {
     register_nav_menus([
         'header_menu' => 'ヘッダーメニュー'
        
-        
     ]);
 });
 
@@ -45,6 +46,10 @@ function get_post_category() {
 add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
 function wpcf7_autop_return_false() {
   return false;
-} 
+}
+
+add_theme_support('title-tag');
+
+add_theme_support( 'automatic-feed-links' )
 
 ;?>

@@ -2,10 +2,11 @@
 
 .l-content {
     width: 100%;
-    height: 100vh;
+    height: auto;
 
     @include var-mixin.pc {
         width: calc(100% - 280px);
+        height: auto;
 
     }
 }

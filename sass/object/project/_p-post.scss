@@ -4,12 +4,13 @@
     position: relative;
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
     transition-duration: 0.5s;
     margin-bottom: 12px;
 
 
     @include var-mixin.sp {
+        height: 100%;
         width: 47%;
 
         &:not(:nth-child( odd )) {
@@ -61,12 +62,12 @@
 .p-post__img {
     width: 100%;
     margin-bottom: 3%;
+    aspect-ratio: 7/5;
 
     img {
         display: block;
         width: 100%;
         object-fit: cover;
-        aspect-ratio: 10/9;
         height: 100%;
         box-shadow: 1px 1px 20px 1px rgb(0 0 0 / 20%);
 

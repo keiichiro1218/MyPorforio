@@ -1,10 +1,5 @@
 @use "./foundation/var-mixin.scss" as var-mixin;
 
-.l-main {
+.l-body {
     height: 100%;
-
-    @include var-mixin.pc {
-        display: flex;
-
-    }
 }

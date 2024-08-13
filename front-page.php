@@ -11,20 +11,20 @@
                             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/noimg.png" alt="">
                         <?php endif; ?>
                     </figure>
-                </div>
-                <!-- /.p-post__content -->
-                <div class="p-post__infomation">
-                    <div class="p-post__title c-post-title">
-                        <?php the_title(); ?>
+                    <!-- /.p-post__content -->
+                    <div class="p-post__infomation">
+                        <div class="p-post__title c-post-title">
+                            <?php the_title(); ?>
+                        </div>
+                        <!-- /.p-post__title -->
+                        <div class="p-post__date">
+                            <i class="fa-solid fa-repeat"></i>
+                            <?php the_modified_date('Y年 M d日'); ?>
+                        </div>
+                        <!-- /.p-post__date -->
                     </div>
-                    <!-- /.p-post__title -->
-                    <div class="p-post__date">
-                        <i class="fa-solid fa-repeat"></i>
-                        <?php the_modified_date('Y年 M d日'); ?>
-                    </div>
-                    <!-- /.p-post__date -->
+                    <!-- /.p-post__information -->
                 </div>
-                <!-- /.p-post__information -->
             </a>
             <!-- /.p-post -->
             <?php wp_link_pages(); ?>

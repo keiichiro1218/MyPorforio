@@ -4,7 +4,6 @@
     width: 100%;
 
     @include var-mixin.pc {
-        height: auto;
         width: 280px;
 
     }

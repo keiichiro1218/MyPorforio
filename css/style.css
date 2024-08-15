@@ -293,18 +293,23 @@ a {
   color: #000000;
 }
 
+html {
+  height: 100%;
+}
+
 .l-body {
   height: 100%;
 }
 
 .l-content {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 @media screen and (min-width: 1000px) {
   .l-content {
     width: calc(100% - 280px);
-    height: auto;
+    height: 100vh;
+    overflow: scroll;
   }
 }
 
@@ -321,7 +326,6 @@ a {
 }
 @media screen and (min-width: 1000px) {
   .l-header {
-    height: auto;
     width: 280px;
   }
 }
@@ -487,6 +491,7 @@ a {
 @media screen and (min-width: 1000px) {
   .p-fields {
     display: flex;
+    width: 100%;
   }
 }
 
@@ -585,7 +590,6 @@ a {
 @media screen and (min-width: 1000px) {
   .p-header {
     display: block;
-    height: 100%;
     box-shadow: 2px 0px rgba(0, 0, 0, 0.16);
     padding: 50px 10%;
   }
@@ -752,8 +756,9 @@ a {
 }
 
 .p-post__infomation {
-  aspect-ratio: 7/2;
+  aspect-ratio: 7/1;
   overflow-wrap: break-word;
+  padding: 5px;
 }
 
 .p-post__title {
